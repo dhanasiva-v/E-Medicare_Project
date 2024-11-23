@@ -1,0 +1,94 @@
+/* Container for the background image and form */
+#sect1 {
+  display: flex; /* Create a flex container */
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content */
+ 
+  height: 100vh; /* Full viewport height */
+  background-image: url('https://www.scnsoft.com/ecommerce/sell-medicine-online/cover-pic-sell-medicine-online.svg'); /* Add your background image */
+  background-size: 70% auto; /* Reduce image size to 70% of the container width */
+  background-position: left center; /* Position the image to the left */
+  background-repeat: no-repeat; /* Prevent image repetition */
+}
+ 
+/* Flex container to align items to the right */
+.background-section {
+  display: flex; /* Create a flex container for positioning */
+  justify-content: flex-end; /* Align items to the right */
+  flex: 1; /* Allow this section to take up remaining space */
+}
+ 
+/* Parent container for positioning context */
+.parent-container {
+  position: relative; /* Ensure the parent container has positioning context */
+  width: 50%;
+  margin-left: 65%;
+  margin-bottom: 10%;
+}
+ 
+/* Form styles */
+.form {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  padding: 20px; /* Increased padding inside the form */
+  width: 80%; /* Set form width to 80% of its parent container */
+  max-width: 500px; /* Increased maximum width to 500px for a larger form */
+  position: relative; /* Ensure relative positioning for correct alignment */
+  color: #333; /* Text color inside the form */
+ 
+}
+ 
+/* Form group styling */
+.form-group {
+  margin-bottom: 25px; /* Increased space between form groups */
+}
+ 
+/* Form heading styling */
+.form-heading {
+  color: rgb(19, 18, 18); /* Heading color */
+  margin-bottom: 25px; /* Increased space below heading */
+  font-size: 1.5em; /* Larger font size for headings */
+}
+ 
+/* Input and password field styles */
+input[type="text"],
+input[type="password"],
+.form-control {
+  width: 100%; /* Full width of the form group */
+  padding: 12px; /* Increased padding for larger input fields */
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px; /* Slightly larger border radius for rounded corners */
+  box-sizing: border-box; /* Include padding in the width */
+  font-size: 1em; /* Larger font size for better readability */
+}
+ 
+/* Submit button styling */
+.submit-button {
+  width: 100%;
+  background-color: #15a2f3; /* Submit button background color */
+  color: white;
+  padding: 12px; /* Increased padding for a larger button */
+  border: none;
+  border-radius: 6px; /* Slightly larger border radius */
+  cursor: pointer;
+  margin-top: 15px; /* Increased space above submit button */
+}
+ 
+.submit-button:hover {
+  background-color: #45a049; /* Hover color for submit button */
+}
+ 
+/* Error message styling */
+.error {
+  color: red; /* Error message color */
+  font-size: 0.9em; /* Slightly larger font size for error messages */
+  display: block; /* Ensure error messages are displayed as block elements */
+}
+ 
+/* Heading styling */
+h2 {
+  color: rgb(19, 18, 18); /* Heading color */
+  text-align: center; /* Center text inside the form */
+}

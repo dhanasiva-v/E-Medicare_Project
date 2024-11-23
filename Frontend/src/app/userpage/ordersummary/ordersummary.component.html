@@ -1,0 +1,44 @@
+<div id="sect1" class="container">
+    <header class="main-header-1">
+      <div>
+        <a routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="logo">E-Medicare</a>
+      </div>
+      <nav class="navigation">
+        <a routerLink="/cart" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="main-items">Back</a>
+        <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="main-items">Log-out</a>
+      </nav>
+    </header>
+  
+    <h1 style="text-align: center;color: black;">Order Summary</h1>
+    <div class="table-wrapper">
+      <table class="fl-table">
+        <thead>
+          <tr>
+      
+            <th>Medicine Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+            
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let billing of billings">
+            
+            <td>{{ billing.billingMedicineName }}</td>
+            <td>{{ billing.billingDescription }}</td>
+            <td>{{ billing.billingPrice }}</td>
+            <td>{{ billing.billingQuantity }}</td>
+            <td>{{ billing.billingSubtotal }}</td>
+           
+          </tr>
+        </tbody>
+      </table>
+      <p class="total-price">Total Price: {{ calculateTotal() }}</p>
+     
+    </div>
+  </div>
+
+  

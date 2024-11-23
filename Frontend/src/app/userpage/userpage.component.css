@@ -1,0 +1,298 @@
+#sect1 {
+    background-size: 100%;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  z-index: -1;
+  position: absolute;
+  opacity: 1;
+}@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+ 
+.main-header-1 {
+    background-color: #2D78DB;
+    height: 100px; /* Increase header height */
+    padding: 10px 0; /* Add padding for vertical space */
+    border-bottom: 2px solid #ffffff; /* Add a border at the bottom */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for a 3D effect */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Distribute space between items */
+    padding-left: 8%; /* Adjust left padding */
+    padding-right: 8%; /* Adjust right padding */
+    display: flex;
+}
+.logo {
+    font-weight: bold;
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+    position: relative;
+    left: 8%;
+    line-height: 38px;
+}
+ 
+.main-header-1 > div {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px;
+}
+ 
+.navigation {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    padding: 8px;
+    z-index: 1;
+    display: inline-block;
+    text-align: right;
+    width: fit-content;
+    margin-left: 75%;
+}
+ 
+.main-items {
+    font-size: 14pt;
+    font-weight: bold;
+    line-height: 38px;
+}
+ 
+.navigation > a {
+    display: inline-block;
+    margin: 0 8px;
+    text-decoration: none;
+    font-weight: 900;
+    color: white;
+    padding: 8px 16px; /* Add padding to navigation links */
+    border-radius: 4px; /* Rounded corners for links */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+ 
+.navigation > a:hover {
+    background-color: #ffffff; /* Light background color on hover */
+    color: #151abd; /* Change text color on hover */
+}
+ 
+.content {
+    width: 100%;
+    height: 540px;
+    background-size: cover;
+}
+ 
+.head1 {
+    position: relative;
+    top: 45%;
+    margin: auto;
+    color: white;
+    text-align: center;
+    font-size: 30pt;
+    font-weight: 800;
+}
+ 
+.amenities {
+    height: 300px;
+    position: relative;
+    top: 5%;
+    background-color: beige;
+}
+ 
+.ul-list1 {
+    text-align: center;
+    list-style: none;
+    width: auto;
+    background-color: beige;
+    background-position: center;
+}
+
+
+.buttonon {
+    background-color: rgb(177, 12, 26); /* Normal state background */
+    border-radius: 12px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+
+
+.buttonon:disabled {
+    background-color: #cccccc; /* Gray background for disabled state */
+    color: #666666; /* Dark gray text color */
+    cursor: not-allowed; /* Change cursor to indicate unavailability */
+    opacity: 0.7; /* Slightly transparent to indicate disabled state */
+}
+
+
+input[type="text"] {
+  width: 20%;
+  padding: 8px 10px;
+  margin: 8px 0;
+  border: 2px solid rgb(5, 1, 255);
+  border-radius: 12px;
+  
+}
+/* Table Styles */
+.table-wrapper {
+  overflow-x: auto; /* Enable horizontal scrolling on small screens */
+  margin: 20px; /* Margin around the table wrapper */
+}
+
+.fl-table {
+  border-collapse: collapse; /* Collapse borders */
+  width: 100%; /* Full width */
+  background-color: #fff; /* Background color */
+  box-shadow: 0 2px 10px rgba(228, 38, 38, 0.1); /* Subtle shadow */
+}
+
+.fl-table th,
+.fl-table td {
+  padding: 12px 15px; /* Padding for cells */
+  text-align: left; /* Align text to the left */
+  border-bottom: 1px solid #f7ebeb; /* Bottom border */
+}
+
+.fl-table th {
+  background-color: #f3eaea; /* Light background for headers */
+  font-weight: bold; /* Bold font for headers */
+  color: #333; /* Darker text for contrast */
+}
+
+.fl-table tbody tr:hover {
+  background-color: #f9f9f9; /* Highlight row on hover */
+}
+
+.fl-table .buttonon {
+  color: white; /* White text */
+  border: none; /* Remove border */
+  padding: 8px 12px; /* Padding */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+
+
+
+/* Responsive */
+/* 
+@media (max-width: 767px) {
+  .fl-table {
+      display: block;
+      width: 100%;
+  }
+  .table-wrapper:before{
+      content: "Scroll horizontally >";
+      display: block;
+      text-align: right;
+      font-size: 18px;
+      color: white;
+      padding: 0 0 10px;
+  }
+  .fl-table thead, .fl-table tbody, .fl-table thead th {
+      display: block;
+  }
+  .fl-table thead th:last-child{
+      border-bottom: none;
+  }
+  .fl-table thead {
+      float: left;
+  }
+  .fl-table tbody {
+      width: auto;
+      position: relative;
+      overflow-x: auto;
+  }
+  .fl-table td, .fl-table th {
+      padding: 20px .625em .625em .625em;
+      height: 60px;
+      vertical-align: middle;
+      box-sizing: border-box;
+      overflow-x: hidden;
+      overflow-y: auto;
+      width: 120px;
+      font-size: 18px;
+      text-overflow: ellipsis;
+  }
+  .fl-table thead th {
+      text-align: left;
+      border-bottom: 1px solid #f7f7f9;
+  }
+  .fl-table tbody tr {
+      display: table-cell;
+  }
+  .fl-table tbody tr:nth-child(odd) {
+      background: none;
+  }
+  .fl-table tr:nth-child(even) {
+      background: transparent;
+  }
+  .fl-table tr td:nth-child(odd) {
+      background: #F8F8F8;
+      border-right: 1px solid #E6E4E4;
+  }
+  .fl-table tr td:nth-child(even) {
+      border-right: 1px solid #E6E4E4;
+  }
+  .fl-table tbody td {
+      display: block;
+      text-align: center;
+  }
+} */
+
+
+/* Improved Styling for Categories */
+.select-wrapper {
+  display: inline-block; /* Keeps it inline with other elements */
+  background-color: #f0f0f0; /* Light background for better visibility */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px; /* Padding for spacing inside */
+  position: relative;
+  left: 60%; /* Move it to the right */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.select-wrapper label {
+  display: block; /* Label above the select */
+  font-weight: bold; /* Make the label bold */
+  margin-bottom: 5px; /* Space between label and dropdown */
+  color: #333; /* Darker text color for better readability */
+}
+
+.select-wrapper select {
+  width: 100%; /* Full width for the select */
+  padding: 10px; /* Padding inside the dropdown */
+  border: 1px solid #bbb; /* Border around the dropdown */
+  border-radius: 8px; /* Rounded corners for the dropdown */
+  outline: none; /* Remove default outline */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for focus */
+  background-color: #fff; /* White background for the dropdown */
+  font-size: 16px; /* Increase font size for better readability */
+}
+
+.select-wrapper select:focus {
+  border-color: #007bff; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add shadow on focus */
+}
+
+.select-wrapper select option {
+  padding: 10px; /* Padding inside each option */
+  background-color: #fff; /* White background for options */
+  color: #333; /* Darker text color for options */
+}
+
+/* Additional Styling for Hover and Active States */
+.select-wrapper select:hover {
+  border-color: #0056b3; /* Darker border color on hover */
+}
+
+.select-wrapper select:active {
+  border-color: #004085; /* Even darker border color on active */
+}
+

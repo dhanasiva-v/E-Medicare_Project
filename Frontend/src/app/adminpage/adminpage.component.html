@@ -1,0 +1,58 @@
+<div id="sect1"class="container"></div>
+    <header class="main-header-1">
+        <div>
+            <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="logo">E-Medicare</a>
+            </div>
+            <nav class="navigation">
+                <a routerLink="/addmedicine" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="main-items">Add Medicines</a>
+                <a routerLink="/viewcontactus" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="main-items">Queries</a>
+                <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="main-items">Log-out</a>
+               
+            </nav>
+    </header>
+    <router-outlet></router-outlet>
+    <body>
+    <h1  style="text-align:  center;" class="heading design"> <span>Available <span>Medicine</span> </span></h1>
+    <div >
+       
+        <div class="table-container">
+            <table class="table table-hover table-info">
+              <thead>
+                <tr>
+                  <th>Medicine Name</th>
+                  <th>MFD</th>
+                  <th>Type</th>
+                  <th>Price</th>
+                  <th>Description</th>
+                  <th>EXP</th>
+                  <th>Status</th>
+                  <th>Seller</th>
+                  <th>Update</th>
+                  <th>Delete</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let Medicines of medicines">
+                  <td>{{Medicines.medicineName}}</td>
+                  <td>{{Medicines.manufactureDate}}</td>
+                  <td>{{Medicines.type}}</td>
+                  <td>{{Medicines.price}}</td>
+                  <td>{{Medicines.description}}</td>
+                  <td>{{Medicines.expdate}}</td>
+                  <td>{{Medicines.status}}</td>
+                  <td>{{Medicines.seller}}</td>
+                  <td><a routerLink="/updatemedicine/{{Medicines.medicineId}}" class="button">UPDATE</a></td>
+                  <td><button (click)="deleteM(Medicines.medicineId)" class="buttonon">DELETE</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+         
+       
+        </div>
+   
+        <!--<a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="main-items">Logout</a>
+        -->
+   
+        </body>
+        <router-outlet></router-outlet>

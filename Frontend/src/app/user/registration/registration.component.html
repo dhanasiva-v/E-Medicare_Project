@@ -1,0 +1,43 @@
+  <app-header></app-header>
+    <div class="container">
+      <div class="registration-form">
+        <h3>User Registration</h3>
+        <form #s="ngForm" (ngSubmit)="onSubmit(s)">
+          <div class="form-group">
+            <label for="first_name">First Name</label>
+            <input type="text" required name="first_name" placeholder="Ashish" ngModel #first_name="ngModel" />
+            <span *ngIf="first_name.invalid && first_name.touched" class="error">This field is required.</span>
+          </div>
+          <div class="form-group">
+            <label for="last_name">Last Name</label>
+            <input type="text" name="last_name" placeholder="Mishra" ngModel />
+          </div>
+          <div class="form-group">
+            <label for="mobile_no">Mobile No</label>
+            <input type="text" required name="mobile_no" placeholder="9123456789" ngModel #mobile_no="ngModel" />
+            <span *ngIf="mobile_no.invalid && mobile_no.touched" class="error">This field is required.</span>
+          </div>
+          <div class="form-group">
+            <label for="age">Age</label>
+            <input type="number" required name="age" placeholder="20" ngModel #age="ngModel" />
+            <span *ngIf="age.invalid && age.touched" class="error">This field is required.</span>
+          </div>
+          <div class="form-group">
+            <label for="username">Email Id</label>
+            <input type="email" required name="username" placeholder="ashishmishra@gmail.com" ngModel #username="ngModel" />
+            <span *ngIf="username.invalid && username.touched" class="error">This field is required.</span>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" required name="password" placeholder="Asgish@Mi&122$" ngModel #password="ngModel" />
+            <span *ngIf="password.invalid && password.touched" class="error">This field is required.</span>
+          </div>
+          <div class="form-group">
+            <label for="gender">Gender</label>
+            <input type="text" required name="gender" placeholder="Male" ngModel #gender="ngModel" />
+            <span *ngIf="gender.invalid && gender.touched" class="error">This field is required.</span>
+          </div>
+          <button type="submit" [disabled]="s.invalid">Submit</button>
+        </form>
+      </div>
+    </div>

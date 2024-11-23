@@ -1,0 +1,95 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+ 
+.main-header-1 {
+    background-color: #2D78DB;
+    height: 100px; /* Increase header height */
+    padding: 10px 0; /* Add padding for vertical space */
+    border-bottom: 2px solid #ffffff; /* Add a border at the bottom */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for a 3D effect */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Distribute space between items */
+    padding-left: 8%; /* Adjust left padding */
+    padding-right: 8%; /* Adjust right padding */
+    display: flex;
+}
+.logo {
+    font-weight: bold;
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+    position: relative;
+    left: 8%;
+    line-height: 38px;
+}
+ 
+.main-header-1 > div {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px;
+}
+ 
+.navigation {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    padding: 8px;
+    z-index: 1;
+    display: inline-block;
+    text-align: right;
+    width: fit-content;
+    margin-left: 75%;
+}
+ 
+.main-items {
+    font-size: 14pt;
+    font-weight: bold;
+    line-height: 38px;
+}
+ 
+.navigation > a {
+    display: inline-block;
+    margin: 0 8px;
+    text-decoration: none;
+    font-weight: 900;
+    color: white;
+    padding: 8px 16px; /* Add padding to navigation links */
+    border-radius: 4px; /* Rounded corners for links */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+ 
+.navigation > a:hover {
+    background-color: #ffffff; /* Light background color on hover */
+    color: #151abd; /* Change text color on hover */
+}
+ 
+.content {
+    width: 100%;
+    height: 540px;
+    background-size: cover;
+}
+ 
+.head1 {
+    position: relative;
+    top: 45%;
+    margin: auto;
+    color: white;
+    text-align: center;
+    font-size: 30pt;
+    font-weight: 800;
+}
+ 
+.amenities {
+    height: 300px;
+    position: relative;
+    top: 5%;
+    background-color: beige;
+}
+ 
+.ul-list1 {
+    text-align: center;
+    list-style: none;
+    width: auto;
+    background-color: beige;
+    background-position: center;
+}

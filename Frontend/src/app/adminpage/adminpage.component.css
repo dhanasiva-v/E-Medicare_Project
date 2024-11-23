@@ -1,0 +1,183 @@
+.Add_Med {
+  padding: 100px;
+}
+#sect1 {
+ 
+  background-size: 100%;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  z-index: -1;
+  position: absolute;
+  opacity: 1;
+}
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+ 
+.main-header-1 {
+  background-color: #2D78DB;
+  height: 100px; /* Increase header height */
+  padding: 10px 0; /* Add padding for vertical space */
+  border-bottom: 2px solid #ffffff; /* Add a border at the bottom */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for a 3D effect */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Distribute space between items */
+  padding-left: 8%; /* Adjust left padding */
+  padding-right: 8%; /* Adjust right padding */
+  display: flex;
+}
+.logo {
+  font-weight: bold;
+  color: white;
+  font-size: 28px;
+  text-decoration: none;
+  position: relative;
+  left: 8%;
+  line-height: 38px;
+}
+ 
+.main-header-1 > div {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px;
+}
+ 
+.navigation {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  padding: 8px;
+  z-index: 1;
+  display: inline-block;
+  text-align: right;
+  width: fit-content;
+  margin-left: 75%;
+}
+ 
+.main-items {
+  font-size: 14pt;
+  font-weight: bold;
+  line-height: 38px;
+}
+ 
+.navigation > a {
+  display: inline-block;
+  margin: 0 8px;
+  text-decoration: none;
+  font-weight: 900;
+  color: white;
+  padding: 8px 16px; /* Add padding to navigation links */
+  border-radius: 4px; /* Rounded corners for links */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+ 
+.navigation > a:hover {
+  background-color: #ffffff; /* Light background color on hover */
+  color: #151abd; /* Change text color on hover */
+}
+ 
+.content {
+  width: 100%;
+  height: 540px;
+  background-size: cover;
+}
+ 
+.head1 {
+  position: relative;
+  top: 45%;
+  margin: auto;
+  color: white;
+  text-align: center;
+  font-size: 30pt;
+  font-weight: 800;
+}
+ 
+.amenities {
+  height: 300px;
+  position: relative;
+  top: 5%;
+  background-color: beige;
+}
+ 
+.ul-list1 {
+  text-align: center;
+  list-style: none;
+  width: auto;
+  background-color: beige;
+  background-position: center;
+}
+ 
+/* Table Styles */
+/* Table Container Styles */
+/* Table Container Styles */
+.table-container {
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically if needed */
+  padding: 20px; /* Add padding around the table */
+}
+ 
+.table {
+  width: 100%;
+  max-width: 1400px; /* Increased maximum width for a larger table */
+  border-collapse: separate; /* Separate borders for a cleaner look */
+  border-spacing: 0; /* Remove spacing between cells */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Larger shadow for better depth */
+  margin: 20px 0; /* Add margin around the table */
+}
+ 
+.table th, .table td {
+  padding: 20px; /* Increased padding inside table cells */
+  text-align: left; /* Align text to the left */
+  border-bottom: 1px solid #ddd; /* Light grey border at the bottom of cells */
+}
+ 
+.table th {
+  background-color: #095499; /* Header background color */
+  color: white; /* Header text color */
+  font-size: 18px; /* Larger font size for headers */
+  font-weight: 600; /* Slightly lighter bold weight */
+}
+ 
+.table td {
+  background-color: #EEF4FF; /* Light blue background for cells */
+  font-size: 16px; /* Larger font size for data cells */
+}
+ 
+.table tr:nth-child(even) {
+  background-color: #f9f9f9; /* Very light grey for even rows */
+}
+ 
+.table tr:hover {
+  background-color: #f1f1f1; /* Light grey background on hover */
+}
+ 
+/* Button Styles */
+.button, .buttonon {
+  border: none;
+  border-radius: 6px; /* Slightly larger rounded corners */
+  color: white;
+  padding: 12px 24px; /* Larger padding for better click area */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; /* Adjusted font size for buttons */
+  margin: 6px 3px; /* Slightly larger margins */
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions for background and shadow */
+}
+ 
+.button {
+  background-color: #1e366a; /* Darker background color */
+}
+ 
+.buttonon {
+  background-color: #FF7F50; /* Coral background color */
+  color: black; /* Text color for the coral button */
+}
+ 
+.button:hover, .buttonon:hover {
+  background-color: #005b47; /* Darker color for hover effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}

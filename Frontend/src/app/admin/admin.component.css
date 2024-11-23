@@ -1,0 +1,135 @@
+body {
+    position: relative; /* Ensure body is positioned relative for absolute positioning of ::before */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+ 
+body::before {
+    content: ''; /* Required to make the pseudo-element appear */
+    position: absolute; /* Position it absolutely to cover the whole viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.emedstore.in/images/discussing-difficult-disease-treatment-app1.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(5px); /* Adjust the blur intensity */
+    z-index: -1; /* Place it behind other content */
+}
+ 
+.box {
+    position: relative;
+    width: 380px;
+    background: #ffffff; /* White background for the form container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-top: -12%;
+}
+ 
+ 
+.form {
+    padding: 40px;
+    border-radius: 8px;
+    background: #ffffff; /* White background for the form */
+    border: 2px solid #1e00ff; /* Border color and thickness */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for added depth */
+}
+ 
+.form h2 {
+    color: #333333; /* Dark text color for the heading */
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif; /* Font family for the heading */
+    font-size: 1.5em; /* Font size for the heading */
+}
+ 
+.inputbox {
+    position: relative;
+    margin-bottom: 20px; /* Space between input fields */
+}
+ 
+ 
+.inputbox label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555555; /* Gray color for the label */
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif; /* Font family for the labels */
+    font-size: 0.9em; /* Font size for the labels */
+}
+ 
+.inputbox input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd; /* Light border for the input */
+    border-radius: 4px;
+    font-size: 1em;
+    color: #333333; /* Dark text color */
+    box-sizing: border-box; /* Ensures padding is included in width */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+    font-family: 'Poppins', sans-serif; /* Font family for the input fields */
+}
+ 
+.inputbox input:focus {
+    border-color: #1e00ff; /* Border color changes on focus */
+    outline: none; /* Removes default outline */
+}
+ 
+ 
+.actionBtn {
+    width: 100%;
+    padding: 15px;
+    background: #0755ff; /* Coral color for the button */
+    border: none;
+    border-radius: 4px;
+    color: #ffffff; /* White text color */
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease; /* Smooth transition for background color */
+}
+ 
+.actionBtn:hover {
+    background: #e55a50; /* Slightly darker coral color on hover */
+}
+ 
+.actionBtn:active {
+    background: #d84e45; /* Even darker color on click */
+    opacity: 0.9;
+}
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 40px;
+  }
+  
+  .btn:hover {
+    background-color: #bf5bd8; /* Darker green on hover */
+    transform: scale(1.05);
+  }
+  
+  .btn:active {
+    transform: scale(0.95); /* Slight shrink on click */
+  }
+  
+  .btn:disabled {
+    background-color: #aaa; /* Greyed out for disabled state */
+    cursor: not-allowed;
+  }
+  

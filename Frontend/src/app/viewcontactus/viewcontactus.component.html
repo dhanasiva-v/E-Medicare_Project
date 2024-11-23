@@ -1,0 +1,32 @@
+<div id="sect1" class="container">
+    <header class="main-header-1">
+        <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="logo">E-Medicare</a>
+        <nav class="navigation">
+            <a routerLink="/adminpage" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="main-items">Back</a>
+            <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="main-items">Log-out</a>
+        </nav>
+    </header>
+    <h1 class="page-title">Queries Asked By User</h1>
+    <div class="table-container">
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Mail-Id</th>
+                    <th>Contact Number</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let contacts of contacts">
+                    <td>{{contacts.name}}</td>
+                    <td>{{contacts.emailId}}</td>
+                    <td>{{contacts.contactNo}}</td>
+                    <td>{{contacts.description}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<router-outlet></router-outlet>
+ 

@@ -1,0 +1,175 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+ 
+.main-header-1 {
+    background-color: #2D78DB;
+    height: 100px; /* Increase header height */
+    padding: 10px 0; /* Add padding for vertical space */
+    border-bottom: 2px solid #ffffff; /* Add a border at the bottom */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for a 3D effect */
+    display: flex;
+    justify-content: space-between; /* Distribute space between items */
+    padding: 0 8%; /* Adjust left and right padding to keep items centered */
+    width: 100%; /* Ensure the header takes the full width */
+    position: relative; /* Set relative positioning for absolute items */
+}
+
+.navigation {
+    margin-left: auto; /* Push navigation to the right */
+    padding: 8px;
+}
+
+.navigation > a {
+    padding: 8px 16px; /* Add padding to navigation links */
+    border-radius: 4px; /* Rounded corners for links */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.navigation > a:hover {
+    background-color: #ffffff; /* Light background color on hover */
+    color: #151abd; /* Change text color on hover */
+}
+.content {
+    width: 100%;
+    height: 540px;
+    background-size: cover;
+}
+
+.logo {
+    font-weight: bold;
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+    position: relative;
+    left: 8%;
+    line-height: 38px;
+}
+ 
+.head1 {
+    /* position: relative; */
+    top: 45%;
+    margin: auto;
+    color: white;
+    text-align: center;
+    font-size: 30pt;
+    font-weight: 800;
+}
+ 
+.amenities {
+    height: 300px;
+    position: relative;
+    top: 5%;
+    background-color: beige;
+}
+ 
+.ul-list1 {
+    text-align: center;
+    list-style: none;
+    /* width: auto; */
+    background-color: beige;
+    background-position: center;
+}
+/* Container Styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Card Styles */
+.enroll {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* Header and Title Styles */
+.page-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0 10px;
+    color: #333;
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #10847E;
+    outline: none;
+}
+
+.error {
+    color: #ff4d4d;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Button Styles */
+.button, .buttonon {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button {
+    background-color: #10847E;
+    color: white;
+}
+
+.button:hover {
+    background-color: #0f6c5d;
+}
+
+.buttonon {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.buttonon:hover {
+    background-color: #e03e3e;
+}
+
+/* Actions Container Styles */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.form-actions input[type="submit"] {
+    margin-right: 10px;
+}

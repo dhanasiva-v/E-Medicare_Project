@@ -1,0 +1,88 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+ 
+.main-header-1 {
+    background: linear-gradient(135deg, #2D78DB, #1E4D92);
+    height: 80px;
+    padding: 0 4%;
+    border-bottom: 2px solid #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ 
+.logo {
+    font-weight: bold;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    line-height: 40px;
+}
+ 
+.navigation {
+    display: flex;
+    gap: 12px;
+}
+ 
+.main-items {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+ 
+.main-items:hover {
+    background-color: #ffffff;
+    color: #2D78DB;
+}
+ 
+.page-title {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    margin: 20px 0;
+}
+ 
+.table-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+ 
+.styled-table {
+    width: 100%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+ 
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+ 
+.styled-table thead {
+    background-color: #d72b2b;
+    color: #fff;
+}
+ 
+.styled-table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+ 
+.styled-table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+ 
+.styled-table th {
+    font-size: 16px;
+}
+ 
+.styled-table td {
+    font-size: 14px;
+}

@@ -1,0 +1,60 @@
+<div id="sect1" class="container">
+    <header class="main-header-1">
+        <div>
+            <a routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="logo">E-Medicare</a>
+        </div>
+        <nav class="navigation">
+            <a routerLink="/cart" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
+                class="main-items">Back</a>
+            <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
+                class="main-items">Log-out</a>
+        </nav>
+    </header>
+
+    <h1 class="page-title">payment Gateway</h1>
+
+    <div class="enroll">
+        <form #s="ngForm" (ngSubmit)="onSubmit(s)">
+            
+
+            <div class="form-group form-group-3">
+                <label for="paymentMethod">Choose the Payment Method</label>
+                <select name="paymentMethod" id="paymentMethod">
+                    <option value="debitCard">Debit Card</option>
+                    <option value="creditCard">Credit Card</option>
+                    <option value="upi">UPI</option>
+                </select>
+            </div>
+
+            <div class="form-group form-group-3">
+                <label for="paymentId">Card Number/UPI Id</label>
+                <input type="text" required class="form-control" name="id" ngModel #id="ngModel" />
+                <span *ngIf="id.invalid && id.touched" class="error">required</span>
+            </div>
+
+            <div class="form-group form-group-3">
+                <label for="address1">Address Line 1</label>
+                <input type="text" required class="form-control" name="a1" ngModel #a1="ngModel" />
+                <span *ngIf="a1.invalid && a1.touched" class="error">required</span>
+            </div>
+
+            <div class="form-group form-group-3">
+                <label for="address2">Address Line 2</label>
+                <input type="text" required class="form-control" name="a2" ngModel #a2="ngModel" />
+                <span *ngIf="a2.invalid && a2.touched" class="error">required</span>
+            </div>
+
+            <div class="form-group form-group-3">
+                <label for="address3">Address Line 3</label>
+                <input type="text" required class="form-control" name="a3" ngModel #a3="ngModel" />
+                <span *ngIf="a3.invalid && a3.touched" class="error">required</span>
+            </div>
+
+            <div class="form-actions">
+                <button class="button" >confirm</button> 
+            </div>
+        </form>
+    </div>
+
+    <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,44 @@
+<div id="sect1" class="container">
+    <header class="main-header-1">
+        <div>
+            <a routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="logo">E-Medicare</a>
+        </div>
+        <nav class="navigation">
+            <a routerLink="/userpage" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="main-items">Back</a>
+            <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="main-items">Logout</a>
+        </nav>
+    </header>
+    <h1 style="text-align: center;color: rgba(0, 0, 0, 0.589);">Your Cart</h1>
+    <div class="table-wrapper">
+        <table class="fl-table">
+            <thead>
+                <tr>
+                    <th>Medicine</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Sub Total</th>
+                    <th>Remove From Cart</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let cart of carts">
+                    <td>{{cart.medicineName}}</td>
+                    <td>{{cart.description}}</td>
+                    <td>₹{{cart.price }}</td>
+                    <td>
+                        <button (click)="increment(cart)" class="buttonon">+</button>
+                        {{cart.quantity}}
+                        <button (click)="decrement(cart)" class="buttonon">-</button>
+                    </td>
+                    <td>{{calculateSubtotal(cart) | currency:'INR'}}</td>
+                    <td>
+                        <button (click)="deleteCart(cart.medicineId)" class="buttonon">Remove From Cart</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br>
+        <button class="button buy-button" (click)="buy()">Buy</button> <!-- Positioned Buy button -->
+    </div>
+</div>

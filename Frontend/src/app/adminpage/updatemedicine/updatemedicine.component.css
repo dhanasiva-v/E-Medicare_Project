@@ -1,0 +1,192 @@
+/* Existing styles */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+ 
+.main-header-1 {
+    background-color: #2D78DB;
+    height: 100px; /* Increase header height */
+    padding: 10px 0; /* Add padding for vertical space */
+    border-bottom: 2px solid #ffffff; /* Add a border at the bottom */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for a 3D effect */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Distribute space between items */
+    padding-left: 8%; /* Adjust left padding */
+    padding-right: 8%; /* Adjust right padding */
+    display: flex;
+}
+.logo {
+    font-weight: bold;
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+    position: relative;
+    left: 8%;
+    line-height: 38px;
+}
+ 
+.main-header-1 > div {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px;
+}
+ 
+.navigation {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    padding: 8px;
+    z-index: 1;
+    display: inline-block;
+    text-align: right;
+    width: fit-content;
+    margin-left: 75%;
+}
+ 
+.main-items {
+    font-size: 14pt;
+    font-weight: bold;
+    line-height: 38px;
+}
+ 
+.navigation > a {
+    display: inline-block;
+    margin: 0 8px;
+    text-decoration: none;
+    font-weight: 900;
+    color: white;
+    padding: 8px 16px; /* Add padding to navigation links */
+    border-radius: 4px; /* Rounded corners for links */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+ 
+.navigation > a:hover {
+    background-color: #ffffff; /* Light background color on hover */
+    color: #151abd; /* Change text color on hover */
+}
+ 
+.content {
+    width: 100%;
+    height: 540px;
+    background-size: cover;
+}
+ 
+.head1 {
+    position: relative;
+    top: 45%;
+    margin: auto;
+    color: white;
+    text-align: center;
+    font-size: 30pt;
+    font-weight: 800;
+}
+ 
+ 
+.ul-list1 {
+    text-align: center;
+    list-style: none;
+    width: auto;
+    background-color: beige;
+    background-position: center;
+}
+ 
+/* Form container styling */
+.update_Med {
+    background-color: #f9f9f9; /* Light background for form */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding around the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 600px; /* Limit form width */
+    margin: 0 auto; /* Center the form horizontally */
+}
+ 
+/* Centering only the heading horizontally */
+h1 {
+  text-align: center; /* Center text within the heading's container */
+  font-size: 24px; /* Adjust font size as needed */
+  font-weight: bold; /* Make the font bold */
+  color: #e70909; /* Dark color for better readability */
+  margin: 20px; /* Remove default margins if needed */
+}
+ 
+/* Form group styling */
+.form-group {
+    margin-bottom: 15px; /* Space between form fields */
+}
+ 
+/* Label styling */
+.form-group label {
+    display: block; /* Ensure labels are on their own line */
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: bold; /* Make labels stand out */
+    color: #380707; /* Darker text color for labels */
+}
+ 
+/* Input field styling */
+.form-control {
+    width: 100%; /* Full width of the container */
+    padding: 10px; /* Padding inside the input fields */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    font-size: 16px; /* Slightly larger font size */
+}
+ 
+/* Error message styling */
+.error {
+    color: red; /* Red text color for errors */
+    font-size: 14px; /* Slightly smaller font size */
+    display: block; /* Make sure error message is on its own line */
+    margin-top: 5px; /* Space above the error message */
+}
+ 
+/* Submit button styling */
+.button {
+    background-color: #007bff; /* Primary color for the button */
+    border: none; /* Remove default border */
+    color: white; /* Text color */
+    padding: 12px 20px; /* Padding inside the button */
+    text-align: center; /* Center text inside button */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Allow margin and padding */
+    font-size: 16px; /* Font size for button text */
+    margin-top: 10px; /* Space above the button */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+ 
+/* Button hover effect */
+.button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+ 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-header-1 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+ 
+    .navigation {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+ 
+    .main-content {
+        margin-top: 10px;
+        padding: 15px;
+    }
+   
+    .update_Med {
+        padding: 15px; /* Adjust padding on smaller screens */
+    }
+   
+    .form-group {
+        margin-bottom: 10px; /* Reduce space between form fields */
+    }
+   
+    .button {
+        padding: 10px 15px; /* Adjust padding on smaller screens */
+    }
+}
